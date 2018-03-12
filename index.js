@@ -58,4 +58,4 @@ app.get("/:id", function (request, response) {
     response.json({data: record})
 })
 
-app.listen(9000)
+app.listen(process.env.PORT || 9000)
